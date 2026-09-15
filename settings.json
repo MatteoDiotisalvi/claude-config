@@ -1,0 +1,37 @@
+{
+    "permissions":  {
+                        "allow":  [
+                                      "WebSearch",
+                                      "WebFetch"
+                                  ]
+                    },
+    "theme":  "light-ansi",
+    "agentPushNotifEnabled":  true,
+    "inputNeededNotifEnabled":  true,
+    "hooks":  {
+                  "Notification":  [
+                                       {
+                                           "matcher":  "permission_prompt",
+                                           "hooks":  [
+                                                         {
+                                                             "type":  "command",
+                                                             "command":  "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"$HOME/.claude/claude-notify.ps1\" -Title \"Claude needs approval\" -Message \"Claude is waiting for your permission\""
+                                                         }
+                                                     ]
+                                       },
+                                       {
+                                           "matcher":  "idle_prompt",
+                                           "hooks":  [
+                                                         {
+                                                             "type":  "command",
+                                                             "command":  "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"$HOME/.claude/claude-notify.ps1\" -Title \"Claude finished\" -Message \"Claude has finished and is waiting for you\""
+                                                         }
+                                                     ]
+                                       }
+                                   ]
+              },
+    "statusLine":  {
+                       "type":  "command",
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File C:/Users/Matteo/.claude/statusline-command.ps1"
+                   }
+}

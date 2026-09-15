@@ -1,0 +1,15 @@
+# Allowlist-style .gitignore: everything is ignored by default,
+# only the config files/dirs below are tracked. This keeps credentials,
+# session transcripts, and machine-specific state out of the repo.
+/*
+
+!/.gitignore
+!/CLAUDE.md
+!/settings.json
+!/statusline-command.ps1
+!/claude-notify.ps1
+
+!/skills
+/skills/*
+!/skills/humanise-academic
+!/skills/token-optimization
