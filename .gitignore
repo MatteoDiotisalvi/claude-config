@@ -18,4 +18,6 @@
 !/hooks
 /hooks/*.log
 
-!/memory
+# memory/ is deliberately its own separate, private git repo
+# (nested inside this one) so it never rides along with a public clone.
+/memory

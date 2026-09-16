@@ -5,6 +5,7 @@
       "WebFetch"
     ]
   },
+  "model": "opus",
   "hooks": {
     "UserPromptSubmit": [
       {
@@ -43,9 +44,11 @@
     "type": "command",
     "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"$HOME/.claude/statusline-command.ps1\""
   },
+  "remote": {
+    "defaultEnvironmentId": "env_018mZy5oHpJLF34KJBMBm7UZ"
+  },
+  "autoMemoryDirectory": "~/.claude/memory",
   "theme": "dark",
   "inputNeededNotifEnabled": true,
-  "agentPushNotifEnabled": true,
-  "model": "opus",
-  "autoMemoryDirectory": "~/.claude/memory"
+  "agentPushNotifEnabled": true
 }
