@@ -1,0 +1,159 @@
+{
+  "ask-mentors": {
+    "reason": "UCAS/university-admissions strategy, personal statement, or course-choice question for Matteo's applications.",
+    "keywords": ["personal statement", "ucas", "tmua", "tara", "admissions strategy", "ask the mentors", "what would.*think", "university choice", "which university", "degree apprenticeship"]
+  },
+  "design": {
+    "reason": "Visual design canvas: mockup, wireframe, landing page, poster/flyer/brochure, UI screen design.",
+    "keywords": ["mockup", "wireframe", "landing page", "poster", "flyer", "brochure", "one-pager", "screen design", "ui design", "banner design"]
+  },
+  "dataviz": {
+    "reason": "Creating a chart, graph, plot, dashboard, or any data visualization.",
+    "keywords": ["\\bchart\\b", "\\bgraph\\b", "\\bplot\\b", "dashboard", "data viz", "visualiz", "visualis", "sparkline", "heatmap", "stat tile"]
+  },
+  "artifact-design": {
+    "reason": "About to write/publish an HTML artifact; design pass is required before writing.",
+    "keywords": ["\\bartifact\\b", "publish.*page", "interactive page"]
+  },
+  "artifact-diagramming": {
+    "reason": "A diagram inside an artifact (flowchart, architecture diagram, system diagram).",
+    "keywords": ["\\bdiagram\\b", "flowchart", "flow chart", "architecture diagram"]
+  },
+  "artifact-capabilities": {
+    "reason": "An artifact needs live/shared state: a poll, sign-up sheet, checklist, saved data, or per-user content.",
+    "keywords": ["\\bpoll\\b", "sign-?up sheet", "shared state", "save.*response", "live data page", "leaderboard"]
+  },
+  "update-config": {
+    "reason": "Changing Claude Code's own settings.json: hooks, permissions, allowlists, env vars.",
+    "keywords": ["settings\\.json", "\\bhook\\b", "add permission", "allow.*command", "permission prompt", "env var", "environment variable"]
+  },
+  "keybindings-help": {
+    "reason": "Customizing keyboard shortcuts / keybindings.json.",
+    "keywords": ["keybinding", "rebind", "keyboard shortcut", "chord binding"]
+  },
+  "code-review": {
+    "reason": "Reviewing a diff, branch, or PR for bugs/simplification/efficiency.",
+    "keywords": ["code review", "review my code", "review the diff", "review this pr", "ultrareview", "review my changes"]
+  },
+  "simplify": {
+    "reason": "Cleaning up changed code for reuse/simplification/efficiency (not bug-hunting).",
+    "keywords": ["\\bsimplify\\b", "clean up this code", "reduce duplication"]
+  },
+  "fewer-permission-prompts": {
+    "reason": "Reducing repeated Claude Code permission prompts via an allowlist.",
+    "keywords": ["fewer permission prompts", "stop asking.*permission", "permission allowlist"]
+  },
+  "loop": {
+    "reason": "Running a prompt or command repeatedly on an interval.",
+    "keywords": ["run.*every \\d", "check.*every \\d", "on an interval", "\\bloop\\b", "self-pace"]
+  },
+  "schedule": {
+    "reason": "Scheduling a recurring or one-time cron-based cloud agent/routine.",
+    "keywords": ["schedule.*agent", "cron job", "remind me at", "run this once at", "recurring task"]
+  },
+  "claude-api": {
+    "reason": "Question about Claude/Anthropic models, pricing, API params, or an LLM-shaped task with no provider named.",
+    "keywords": ["\\bclaude\\b", "\\banthropic\\b", "\\bopus\\b", "\\bsonnet\\b", "\\bhaiku\\b", "claude-[a-z0-9-]+", "prompt caching", "tool.use", "\\bmcp\\b"]
+  },
+  "workflow-authoring": {
+    "reason": "Authoring a multi-agent Workflow tool script.",
+    "keywords": ["workflow script", "multi-agent workflow", "\\bultracode\\b", "fan out agents"]
+  },
+  "claude-in-chrome": {
+    "reason": "Automating the Chrome browser: clicking, filling forms, screenshots of a live page.",
+    "keywords": ["click.*button", "fill.*form", "browser automation", "navigate to.*page", "screenshot.*website"]
+  },
+  "run": {
+    "reason": "Launching/running the project's app to see a change work, or screenshotting it.",
+    "keywords": ["run the app", "start the (dev )?server", "screenshot the app", "launch the app"]
+  },
+  "init": {
+    "reason": "Initializing a new CLAUDE.md with codebase documentation.",
+    "keywords": ["init(ialize)? claude\\.md", "document (this|the) codebase"]
+  },
+  "security-review": {
+    "reason": "Security review of pending changes on the current branch.",
+    "keywords": ["security review", "check.*for vulnerabilities", "security audit"]
+  },
+  "anthropic-skills:academic-paper": {
+    "reason": "Academic paper writing pipeline: drafting, outlining, revising, or disclosure sections.",
+    "keywords": ["write.*paper", "academic paper", "guide my paper", "lit(erature)? review", "rebuttal audit", "ai disclosure"]
+  },
+  "anthropic-skills:academic-paper-reviewer": {
+    "reason": "Multi-perspective peer review of an academic manuscript.",
+    "keywords": ["peer review", "review.*manuscript", "referee report", "review my paper"]
+  },
+  "anthropic-skills:academic-pipeline": {
+    "reason": "Full research-to-publication pipeline (research, write, review, revise, finalize).",
+    "keywords": ["research to paper", "full paper workflow", "end-to-end paper", "paper pipeline"]
+  },
+  "anthropic-skills:academic-pptx": {
+    "reason": "Academic presentation: conference talk, thesis defense, lab meeting slides.",
+    "keywords": ["conference talk", "thesis defense", "seminar slides", "academic presentation", "grant briefing"]
+  },
+  "anthropic-skills:database-lookup": {
+    "reason": "Querying a documented public database API (scientific/regulatory/financial).",
+    "keywords": ["database api", "regulatory database", "public database"]
+  },
+  "anthropic-skills:deep-research": {
+    "reason": "Rigorous multi-source research, literature review, systematic review, or fact-check.",
+    "keywords": ["deep research", "systematic review", "meta-analysis", "fact.check", "literature review"]
+  },
+  "anthropic-skills:docx": {
+    "reason": "Creating, reading, or editing a Word document (.docx/.dotx).",
+    "keywords": ["\\.docx", "\\.dotx", "word document", "word doc\\b"]
+  },
+  "anthropic-skills:import-memory": {
+    "reason": "Importing a memory export from another AI assistant.",
+    "keywords": ["import.*memory", "memory export"]
+  },
+  "anthropic-skills:literature-review": {
+    "reason": "Systematic literature review across academic databases (PubMed, arXiv, etc.).",
+    "keywords": ["systematic literature review", "pubmed", "biorxiv", "research synthesis"]
+  },
+  "anthropic-skills:morning": {
+    "reason": "The user's morning brief.",
+    "keywords": ["morning brief", "\\bmy morning\\b"]
+  },
+  "anthropic-skills:paper-lookup": {
+    "reason": "Looking up a specific paper/DOI/PMID/arXiv id or citation.",
+    "keywords": ["\\bdoi\\b", "\\barxiv\\b", "\\bpmid\\b", "find.*paper", "look up.*paper", "citation graph"]
+  },
+  "anthropic-skills:pdf": {
+    "reason": "Anything involving a PDF file: extract, merge, split, watermark, OCR, fill forms.",
+    "keywords": ["\\.pdf\\b", "\\bpdf\\b"]
+  },
+  "anthropic-skills:pptx": {
+    "reason": "Creating or editing a PowerPoint (.pptx) file, slide deck, or presentation template.",
+    "keywords": ["\\.pptx", "\\.potx", "powerpoint", "slide deck", "\\bslides\\b", "presentation deck"]
+  },
+  "anthropic-skills:scientific-writing": {
+    "reason": "Drafting/auditing a scientific manuscript with evidence provenance and reporting guidelines.",
+    "keywords": ["manuscript section", "reporting guideline", "scientific manuscript"]
+  },
+  "anthropic-skills:skill-creator": {
+    "reason": "Creating, editing, or benchmarking a Claude Code skill.",
+    "keywords": ["create a skill", "new skill", "edit.*skill", "benchmark.*skill"]
+  },
+  "anthropic-skills:usfiscaldata": {
+    "reason": "US Treasury Fiscal Data: national debt, treasury securities, federal spending/revenue.",
+    "keywords": ["national debt", "treasury securities", "fiscal data", "debt to the penny"]
+  },
+  "anthropic-skills:write": {
+    "reason": "Matteo's personal writing-voice profile applies to any text he could actually use, not just fresh writing: also editing, rewriting, revising, or drafting. Pure explanation/information requests (he'll only read the output) don't need it.",
+    "keywords": [
+      "(?=.*\\b(write|rewrite|re-write|edit|modify|revise|redraft|re-draft|draft|polish|proofread|rephrase|reword|shorten|tighten|improve|refine|finalize|finalise|amend|adjust)\\b)(?=.*\\b(essay|letter|email|e-mail|statement|report|paragraph|sentence|message|caption|post|bio|response|speech|memo|blurb|description|comment|reply|wording|phrasing|text|copy|script|apology|note|cover letter|draft)\\b)",
+      "\\bproofread\\b",
+      "\\brephrase\\b",
+      "\\breword\\b",
+      "\\bmake (this|that|it) sound (better|more)",
+      "\\btighten (this|that|it|up)\\b",
+      "\\btone (this|that|it) down\\b",
+      "\\bpersonal statement\\b"
+    ]
+  },
+  "anthropic-skills:xlsx": {
+    "reason": "A spreadsheet is the primary input or output: .xlsx/.xlsm/.csv/.tsv.",
+    "keywords": ["\\.xlsx", "\\.xlsm", "\\.csv\\b", "\\.tsv\\b", "spreadsheet"]
+  }
+}

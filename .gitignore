@@ -13,3 +13,9 @@
 /skills/*
 !/skills/humanise-academic
 !/skills/token-optimization
+!/skills/ask-mentors
+
+!/hooks
+/hooks/*.log
+
+!/memory
