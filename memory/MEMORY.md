@@ -3,7 +3,7 @@
 - [User profile](user_profile.md) — Work experience student, no coding background, understands finance; collaboration style preferences
 - [Project context](project_accuria.md) — Accuria Debt Pricing Tool: R Shiny NPL pricing app, goal is Levered Returns tab + HTML export
 - [Style rule](feedback_style.md) — Always match existing app CSS classes, colours, font sizes exactly; never introduce deviating styles
-- [No dashes in writing](feedback_no_dashes.md) — Never use em/en dashes in Matteo's writing; he removes them; use parentheses or commas instead
+- [No dashes in writing](feedback_no_dashes.md) — Never use em/en dashes in Matteo's writing; he removes them; use parentheses or commas instead. Also: explain plainly (no coding background), no "!" prefix on standalone PowerShell commands
 - [Portfolio register](feedback_portfolio_register.md) — Learner Portfolio entries: slightly less formal than graded writing; "merely"→"only" style swaps; analytical but not stiff
 - [Antigone understanding](project_antigone_understanding.md) — Matteo followed Antigone less than other texts; keep entries plot/context-grounded, no deep interpretive claims
 - [Extended Essay project](project_extended_essay.md) — IB EE, registered CS subject, converting Econ+CS to pure CS per supervisor; file lives at Documents/IB Content - Needs Review on school SharePoint; recovered from mass OneDrive deletion 2026-09-14
@@ -17,3 +17,14 @@
 - [Trading project: m4chronix](project_trading_m4chronix.md) — resume via ~/trading/00_START_HERE.md; don't copy him; own backtest planned (files 12-14), not built
 - [Video frame extraction](reference_video_frame_extraction.md) — yt-dlp + ffmpeg + local Whisper fixes browser screenshots not rendering playing video (TikTok still needs login)
 - [Thoroughness over speed](feedback_thoroughness_over_speed.md) — Matteo wants quality over speed as a universal rule, not just for trading research
+- [Calibrate explanation depth](feedback_calibrate_explanation_depth.md) — gloss jargon only when genuinely non-obvious; simple concepts stay at college level, academic writing context
+- [EE: describe before drafting large additions](feedback_ee_describe_before_drafting_large_additions.md) — even when told to "finish" a section, list the issues first and wait, don't jump to a full rewrite
+- [EE: no unprompted live-doc checks](feedback_ee_no_unprompted_live_doc_checks.md) — trust Matteo's word on edits made to the Extended Essay; only re-verify the live .odt if he asks
+- [No-colons soft default](feedback_no_colons_soft_rule.md) — keep suggesting colon-free phrasing in academic writing, but don't flag it if Matteo deliberately adds one
+- [Prefer shorter split sentences](feedback_prefer_shorter_split_sentences.md) — split long sentences, plain word choice, simple syntax over dense/elegant alternatives, academic writing
+- [Short contrastive transitions](feedback_short_contrastive_transitions.md) — Matteo's voice favors "Nevertheless,"/"Still,"/"Even so," openers; offer these more
+- [Stop re-flagging decided edits](feedback_stop_reflagging_decided_edits.md) — once Matteo decides on a suggested edit, don't raise it again even if unchanged
+- [Vary citation placement](feedback_vary_citation_placement.md) — don't default every sentence to ending on a trailing (Author, Year) citation
+- [Vary paragraph closings](feedback_vary_paragraph_closings.md) — don't let every topic paragraph end on the same "our work extends this" move
+- [Cross-device laptop setup](project_cross_device_laptop_setup.md) — home/school laptop resumability plan; cloud sessions as primary surface, config synced via [[reference_claude_config_repo]]; home laptop clone still pending
+- [claude-config repo](reference_claude_config_repo.md) — this repo itself: private GitHub repo syncing ~/.claude skills/CLAUDE.md/settings/memory across laptops and into cloud session VMs via a setup script
