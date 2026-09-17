@@ -1,7 +1,7 @@
 {
   "ask-mentors": {
     "reason": "UCAS/university-admissions strategy, personal statement, or course-choice question for Matteo's applications.",
-    "keywords": ["personal statement", "ucas", "tmua", "tara", "admissions strategy", "ask the mentors", "what would.*think", "university choice", "which university", "degree apprenticeship"]
+    "keywords": ["personal statement", "ucas", "admissions strategy", "ask the mentors", "what would.*think", "university choice", "which university", "degree apprenticeship"]
   },
   "design": {
     "reason": "Visual design canvas: mockup, wireframe, landing page, poster/flyer/brochure, UI screen design.",
