@@ -57,6 +57,18 @@ $weekStr = Format-Pct $weekPct
 $fiveColor = Get-ValueColor $fivePct
 $weekColor = Get-ValueColor $weekPct
 
-$output = $labelColor + "5H " + $fiveColor + $fiveStr + $reset + $labelColor + "  |  " + "7D " + $weekColor + $weekStr + $reset
+# Context window fill (input tokens only, null early in a session) and model name.
+$ctxPct = Get-JsonPath $data 'context_window.used_percentage'
+$ctxStr = Format-Pct $ctxPct
+$ctxColor = $valueColor
+if ($null -ne $ctxPct -and [double]$ctxPct -ge 80) { $ctxColor = $warnColor }
+$modelName = Get-JsonPath $data 'model.display_name'
+if ([string]::IsNullOrWhiteSpace($modelName)) { $modelName = "N/A" }
+
+$sep = $labelColor + "  |  "
+$output = $labelColor + "5H " + $fiveColor + $fiveStr + $reset +
+    $sep + "7D " + $weekColor + $weekStr + $reset +
+    $sep + "CTX " + $ctxColor + $ctxStr + $reset +
+    $sep + $valueColor + $modelName + $reset
 
 Write-Output $output

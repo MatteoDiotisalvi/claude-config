@@ -9,7 +9,7 @@
   },
   "dataviz": {
     "reason": "Creating a chart, graph, plot, dashboard, or any data visualization.",
-    "keywords": ["\\bchart\\b", "\\bgraph\\b", "\\bplot\\b", "dashboard", "data viz", "visualiz", "visualis", "sparkline", "heatmap", "stat tile"]
+    "keywords": ["(make|create|build|draw|generate|show|need).{0,30}\\b(chart|graph|plot|dashboard)s?\\b", "\\b(bar|line|pie|scatter) (chart|graph|plot)", "dashboard", "data viz", "visualiz", "visualis", "sparkline", "heatmap", "stat tile"]
   },
   "artifact-design": {
     "reason": "About to write/publish an HTML artifact; design pass is required before writing.",
@@ -45,7 +45,7 @@
   },
   "loop": {
     "reason": "Running a prompt or command repeatedly on an interval.",
-    "keywords": ["run.*every \\d", "check.*every \\d", "on an interval", "\\bloop\\b", "self-pace"]
+    "keywords": ["/loop", "run.*every \\d", "check.*every \\d", "on an interval", "self-pace", "keep running"]
   },
   "schedule": {
     "reason": "Scheduling a recurring or one-time cron-based cloud agent/routine.",
@@ -53,7 +53,7 @@
   },
   "claude-api": {
     "reason": "Question about Claude/Anthropic models, pricing, API params, or an LLM-shaped task with no provider named.",
-    "keywords": ["\\bclaude\\b", "\\banthropic\\b", "\\bopus\\b", "\\bsonnet\\b", "\\bhaiku\\b", "claude-[a-z0-9-]+", "prompt caching", "tool.use", "\\bmcp\\b"]
+    "keywords": ["\\banthropic (sdk|api)\\b", "\\bclaude api\\b", "\\bapi key\\b", "prompt caching", "tool.use", "claude-(opus|sonnet|haiku|fable)-[0-9a-z-]+", "\\bmodel id\\b", "(claude|anthropic|opus|sonnet|haiku).{0,40}(pricing|token limit|rate limit|context window)"]
   },
   "workflow-authoring": {
     "reason": "Authoring a multi-agent Workflow tool script.",

@@ -3,6 +3,10 @@
     "allow": [
       "WebSearch",
       "WebFetch"
+    ],
+    "deny": [
+      "Read(~/.claude/.credentials.json)",
+      "Edit(~/.claude/.credentials.json)"
     ]
   },
   "model": "opus",
@@ -12,7 +16,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"$HOME/.claude/hooks/skill-suggester.ps1\"",
+            "command": "python -I \"$HOME/.claude/hooks/skill-suggester.py\"",
             "timeout": 10
           }
         ]
